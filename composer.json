@@ -1,0 +1,13 @@
+{
+  "name":        "wearerequired/custom-meta-boxes-mu-loader",
+  "description": "Loads Custom Meta Boxes as a must-use plugin.",
+  "version":     "1.0.0",
+  "type":        "wordpress-muplugin",
+  "license":     "GPL-2.0+",
+  "authors":     [
+    {
+      "name":  "required",
+      "email": "info@required.ch"
+    }
+  ]
+}
