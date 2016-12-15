@@ -1,6 +1,6 @@
 # Custom Meta Boxes MU-Loader
 
-Loads Custom Meta Boxes as a must-use plugin.
+Loads [HM Custom Meta Boxes](https://github.com/humanmade/Custom-Meta-Boxes) as a must-use plugin.
 
 ## Installation
 
