@@ -44,9 +44,13 @@ Example of a `composer.json` for a site:
     }
   ],
   "extra": {
+    "wordpress-install-dir": "wordpress/wp",
     "installer-paths": {
       "wordpress/content/plugins/{$name}/": [
         "type:wordpress-plugin"
+      ],
+      "vendor/{$vendor}/{$name}/": [
+        "type:wordpress-muplugin"
       ],
       "wordpress/content/themes/{$name}/": [
         "type:wordpress-theme"
@@ -56,10 +60,14 @@ Example of a `composer.json` for a site:
       "wordpress/content/mu-plugins/": [
         "type:wordpress-muplugin"
       ]
-    },
-    "wordpress-install-dir": "wordpress/wp"
+    }
   },
   "minimum-stability": "dev",
   "prefer-stable": true
 }
 ```
+
+## Why?
+
+`wp-content/mu-plugins` is designed to only support plugins in a single file. HM Custom Meta Boxes has clearly more than one file.  
+It also helps to keep the wp-content directory of your project as clean as possible. It should actually be empty because you're loading everything through composer. 😉
