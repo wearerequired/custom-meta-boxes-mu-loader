@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Custom Meta Boxes MU-Loader
  * Description: Loads Custom Meta Boxes as a must-use plugin.
- * Version:     1.0.0
+ * Version:     1.1.0
  * Author:      required
  * Author URI:  https://required.com/
  * License:     GPL-2.0+
@@ -14,3 +14,8 @@ if ( file_exists( $plugin_file ) ) {
 	require_once $plugin_file;
 }
 unset( $plugin_file );
+
+add_filter( 'all_plugins', function ( $plugins ) {
+	unset( $plugins['custom-meta-boxes/custom-meta-boxes.php'] );
+	return $plugins;
+} );
