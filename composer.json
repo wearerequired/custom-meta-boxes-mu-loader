@@ -2,7 +2,7 @@
   "name": "wearerequired/custom-meta-boxes-mu-loader",
   "description": "Loads Custom Meta Boxes as a must-use plugin.",
   "type": "wordpress-muplugin",
-  "homepage": "https://github.com/wearerequired/jquery-light",
+  "homepage": "https://github.com/wearerequired/custom-meta-boxes-mu-loader",
   "license": "GPL-2.0+",
   "authors": [
     {
